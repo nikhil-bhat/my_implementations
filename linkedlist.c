@@ -17,6 +17,14 @@ void insert(int data) {
 
 }
 
+void find(int d);
+void find(int d)
+{
+
+
+
+}
+
 
 
 int main()
@@ -29,12 +37,12 @@ xul=head;
     printf("Head stores:%d\n",head->data);
     insert(5);
     insert(-1);
+head=xul;
 
-
-    while(xul!=NULL)
+    while(head!=NULL)
     {
-        printf("Data:%d\n",xul->data);
-        xul=xul->next;
+        printf("Data:%d\n",head->data);
+       head=head->next;
 
     }
     return 0;
